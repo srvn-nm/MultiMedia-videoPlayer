@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Platform</title>
+    <meta name="author" content="Sarvin Nami">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Video Platform</h1>
+        <input type="text" id="search" placeholder="Search videos...">
+    </header>
+    <div id="video-list">
+        <!-- Video thumbnails will be dynamically added here -->
+    </div>
+    <div id="video-player">
+        <div id="player-container" class="r1_iframe_embed">
+            <video id="player" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="video-info">
+            <h2 id="video-title">Video Title</h2>
+            <p id="video-details">Video details will be displayed here.</p>
+            <div id="summary-section">
+                <h3>Summary</h3>
+                <p id="summary">Summary will be displayed here.</p>
+            </div>
+            <div id="comments-section">
+                <h3>Comments</h3>
+                <ul id="comments-list">
+                    <!-- Comments will be dynamically added here -->
+                </ul>
+                <textarea id="new-comment" placeholder="Add a comment..."></textarea>
+                <button id="add-comment">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
